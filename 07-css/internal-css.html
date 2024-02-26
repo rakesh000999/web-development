@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS - Cascading Style Sheets</title>
+        <style>
+            .first {
+                color: green;
+            }
+            p {
+                color: red;
+                font-size: 40px;
+            }
+            h2 {
+                background-color: #111111;
+                /* color: #ffffff; */
+                /* color: rgb(255, 255, 255); */
+                /* color: rgb(255, 0, 0); */
+                color: rgb(0, 255, 0);
+
+            }
+            #second {
+                border: 5px dashed #aaaaaa;
+            }
+
+            .third:hover{
+                rotate: 45deg;
+                transition: 4s all ease-in-out ;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="first">This is a paragraph.</p>
+        <p id="second">This is an another paragraph</p>
+        <h2 class="third">I'm an h2 tag</h2>
+    </body>
+</html>

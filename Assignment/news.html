@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsPedia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="logo.ico">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .nav-bar {
+            background-color: #333;
+            overflow: hidden;
+            top: 0;
+            position: sticky;
+        }
+
+        .nav-bar a {
+            text-decoration: none;
+            float: left;
+            color: white;
+            display: block;
+            padding: 14px 16px;
+            font: 17px;
+        }
+
+        .nav-bar a:hover {
+            background-color: rgb(153, 163, 160);
+            color: black;
+        }
+
+        .nav-bar a.active {
+            background-color: rgb(153, 163, 160);
+        }
+
+        .nav-bar a.icon {
+            display: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            .nav-bar a:not(:first-child) {
+                display: none;
+            }
+
+            .nav-bar a.icon {
+                display: block;
+                float: right;
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            .nav-bar.responsive {
+                position: relative;
+            }
+
+            .nav-bar.responsive a.icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .nav-bar.responsive a {
+                display: block;
+                float: none;
+                text-align: center;
+            }
+
+        }
+
+        header {
+            text-align: center;
+            font-size: larger;
+
+        }
+
+        div.container {
+            padding: 10px;
+        }
+
+        div.container {
+            font-size: calc(15.4px + 0.175vw);
+            text-align: center;
+            margin: 10px 200px;
+        }
+
+        @media screen and (max-width:600px) {
+            div img.story-image {
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            div.container {
+                font-size: calc(15.4px + 0.175vw);
+                margin: 10px;
+            }
+
+            section.story-section p {
+                line-height: 5px;
+                text-align: justify;
+            }
+
+            footer .row {
+                display: block;
+            }
+
+            footer div ul {
+                margin: 20px;
+            }
+        }
+
+        @media only screen and (min-width:601px) and (max-width: 1200px) {
+            .nav-bar a {
+                width: 80px;
+                overflow: hidden;
+            }
+
+            div.container {
+                font-size: calc(15.4px + 0.175vw);
+                text-align: center;
+                margin: 10px 50px;
+            }
+
+            .story-image {
+                width: 100%;
+            }
+
+        }
+
+        section.story-section p {
+            line-height: 33px;
+            margin-bottom: 1.3em
+        }
+
+        footer {
+            background-color: #333;
+            color: whitesmoke;
+            padding: 10px;
+        }
+
+        /* ..........................problem ......................................................................................................................... */
+        /* footer div.row {
+            display: flex;
+        }
+
+        footer div ul {
+            margin: 20px 8.9%;
+        } */
+
+        /* Footer Row Layout */
+        footer div.row {
+            display: flex;
+            flex-wrap: wrap;
+            /* Add this to handle wrapping on smaller screens */
+            justify-content: space-around;
+            /* Adjust as needed */
+        }
+
+        /* Footer List Margin */
+        footer div ul {
+            margin: 20px 0;
+            /* Adjust as needed */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav-bar" id="nav-bar-id">
+        <a href="#" class="active">Home</a>
+        <a href="#">National</a>
+        <a href="#">Politics</a>
+        <a href="#">Valley</a>
+        <a href="#">Money</a>
+        <a href="#">Sports</a>
+        <a href="#">Culture and Lifestyle</a>
+        <a href="#" class="icon">
+            <i class="fa fa-bars" onclick="navBar()"></i>
+        </a>
+    </nav>
+
+    <header>
+        <h1>THE NEPAL POST</h1>
+    </header>
+
+    <div class="container">
+        <section class="story-section">
+
+            <h1>Elon Musk’s Neuralink implants brain chip in first human</h1>
+            <img src="thumb.jpg" alt="Image not found." height="" class="story-image">
+
+            <p>The first human patient has received an implant from brain-chip startup Neuralink on Sunday and is
+                recovering well, the company’s billionaire founder Elon Musk said.
+            </p>
+
+            <p>“Initial results show promising neuron spike detection,” Musk said in a post on the social media platform
+                X on Monday.
+            </p>
+
+            <p> Spikes are activity by neurons, which the National Institute of Health describes as cells that use
+                electrical and chemical signals to send information around the brain and to the body.</p>
+
+            <p> The US Food and Drug Administration had given the company clearance last year to conduct its first trial
+                to test its implant on humans, a critical milestone in the startup’s ambitions to help patients overcome
+                paralysis and a host of neurological conditions.</p>
+
+            <p>In September, Neuralink said it received approval for recruitment for the human trial.</p>
+
+            <p> The study uses a robot to surgically place a brain-computer interface (BCI) implant in a region of the
+                brain that controls the intention to move, Neuralink said previously, adding that its initial goal is to
+                enable people to control a computer cursor or keyboard using their thoughts alone.</p>
+
+            <p>The implants’ “ultra-fine” threads help transmit signals in participants' brains, Neuralink has said.</p>
+
+            <p>The first product from Neuralink would be called Telepathy, Musk said in a separate post on X.</p>
+
+            <p>The startup’s PRIME Study is a trial for its wireless brain-computer interface to evaluate the safety of
+                the implant and surgical robot.</p>
+
+            <p> Neuralink did not immediately respond to a Reuters request for further details.</p>
+
+            <p>The company has faced calls for scrutiny regarding its safety protocols. Reuters reported earlier this
+                month that the company was fined for violating US Department of Transportation (DOT) rules regarding the
+                movement of hazardous materials.</p>
+
+            <p>The company was valued at about $5 billion last June, but four lawmakers in late November asked the US
+                Securities and Exchange Commission to investigate whether Musk had misled investors about the safety of
+                its technology after veterinary records showed problems with the implants on monkeys included paralysis,
+                seizures and brain swelling.</p>
+
+            <p>
+                Musk wrote in a social media post on September 10 that “no monkey has died as a result of a Neuralink
+                implant.” He added that the company chose “terminal” monkeys to minimize risk to healthy ones.
+            </p>
+
+        </section>
+
+    </div>
+
+    <footer class="foot">
+        <div class="row">
+            <ul>
+                <h3>ABOUT US</h3>
+                <li>About the Post</li>
+                <li>Masthead</li>
+                <li>Editorial Standart & Integrity</li>
+                <li>Workplace Harassment Policy</li>
+                <li>Privacy Policy</li>
+            </ul>
+            <ul>
+                <h3>CONTACT US</h3>
+                <li>Write for the Post</li>
+                <li>Letters to the Editor</li>
+                <li>Advertise in the Post</li>
+                <li>Work for the Post</li>
+                <li>Send us a tip</li>
+            </ul>
+            <ul>
+                <h3>INTERACT WITH US</h3>
+                <li>Twitter</li>
+                <li>Facebook</li>
+                <li>Instagram</li>
+            </ul>
+
+        </div>
+    </footer>
+
+    <!-- Functioning code -->
+    <script>
+        function navBar() {
+            var x = document.getElementById("nav-bar-id");
+            x.classList.toggle("responsive");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: aqua;
+    height: 500px;
+}
+
+.circle {
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}

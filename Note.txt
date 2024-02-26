@@ -1,0 +1,35 @@
+Note:
+
+ <h1>Formatting tags:(Inline tags)</h1>
+    <b>Bold</b>
+    <strong>Strong</strong>
+    <i>Italic </i>
+    <em>Emphasized</em>
+    <u>Underline</u>
+    <mark>Highlighted</mark>
+    <sup>Supersscript</sup>
+    <sub>Subscript</sub>
+    <del>Deleted</del>
+    <ins>Inserted</ins>
+    <big>Big</big>
+    <small>Small</small>
+
+Global Attributes:
+
+	Global attributes can be applioed to any HTML elements and are not restricted to specific tags.
+
+	Examples include "class". "id", "style", "title", and "lang".
+
+
+Comments:
+    HTML comments are used to insert notes to a web page.
+    Single line comment:
+         
+         <!-- This is a single line comment. -->
+
+    Multi-line comment:
+
+        <!-- This is a multi-line comment.
+            Multi[le line commengts can include line breaks
+            and also extra   spaces..........]
+              -->

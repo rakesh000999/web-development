@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Variable in CSS... */
+:root {
+    --height: 40px;
+    --fontSize: 25px;
+}
+
+.logo {
+    background-color: rgb(240, 212, 164);
+    float: left;
+    height: var(--height);
+    width: 10%;
+    font-size: var(--fontSize);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+}
+
+.header {
+    background-color: rgba(17, 18, 18, 0.363);
+    float: left;
+    height: var(--height);
+    width: 90%;
+    font-size: var(--fontSize);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-bar {
+    background-color: rgb(234, 234, 157);
+    font-size: var(--fontSize);
+    height: 70px;
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-content {
+    background-color: rgb(150, 210, 159);
+    font-size: var(--fontSize);
+    height: 500px;
+    float: left;
+    width: 25%;
+    overflow: scroll;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+    /* padding: 3px; */
+}
+
+.main-content {
+    background-color: rgb(159, 196, 222);
+    font-size: var(--fontSize);
+    height: 500px;
+    float: left;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-content {
+    background-color: rgb(140, 218, 162);
+    font-size: var(--fontSize);
+    height: 500px;
+    float: left;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    background-color: rgb(99, 96, 100);
+    color: #ffffff;
+    font-size: var(--fontSize);
+    height: 200px;
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

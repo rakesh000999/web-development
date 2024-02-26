@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Fill this form.</h1>
+        <button>Sign Up</button>
+    </div>
+    <form action="#" onsubmit="myFunc()">
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="firstname">First Name</label>
+            <input type="text" name="firstname" id="firstname" required readonly value="Rakesh" disabled />
+            <br><br>
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lastname" id="lastname" maxlength="10" minlength="4" required />
+        </fieldset>
+
+        <br><br>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" />
+        <br><br>
+
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" min="2" max="10" />
+        <br><br>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+        <br><br>
+        <!-- Data list -->
+        <label for="provinces">Select a Province</label>
+        <input list="provinces" />
+        <datalist id="provinces">
+            <select name="" id="provinces">
+                <option value="Bagmati">Bagmati</option>
+                <option value="Koshi">Koshi</option>
+                <option value="Gandaki">Gandaki</option>
+                <option value="Lumbini">Lumbini</option>
+                <option value="Sudurpaschim">Sudurpaschim</option>
+                <option value="Madesh">Madesh </option>
+                <option value="Karnali">Karnali</option>
+            </select>
+        </datalist>
+        <br><br>
+
+        <label for="file">File</label>
+        <input type="file" name="file" id="file" />
+        <br><br>
+
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" value="m" id="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="f" id="female">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" value="o" id="other">
+        <label for="other">Other</label>
+        <br><br>
+
+        <label for="country">Country</label>
+        <select name="country" id="country" multiple onchange="onCountryChange()">
+            <option value="">Select an Option</option>
+
+            <optgroup label="Asia">
+                <option value="np">Nepal</option>
+                <option value="np">India</option>
+                <option value="np">Pakistan</option>
+            </optgroup>
+
+            <optgroup label="North America">
+                <option value="np">US</option>
+                <option value="np">Canada</option>
+            </optgroup>
+
+            <optgroup label="Africa">
+                <option value="Ghana">Ghana</option>
+            </optgroup>
+
+        </select>
+        <br><br>
+
+        <label for="hobby">Hobby</label>
+        <input type="checkbox" name="hobby" id="hobby" checked>Playing Football
+        <input type="checkbox" name="hobby" id="hobby" checked>Batminton
+        <input type="checkbox" name="hobby" id="hobby">Hockey
+        <input type="checkbox" name="hobby" id="hobby">Cricket
+        <br><br>
+
+        <label for="description">Description</label>
+        <textarea name="description" id="description" cols="30" rows="10"></textarea>
+        <br><br>
+
+        <input type="submit" name="submit" value="Done">
+        <input type="reset" name="reset" value="Reset">
+
+        <!-- <input list="games">
+        <datalist id="games">
+            <select name="" id="">
+                <option value="Cricket">Cricket</option>
+                <option value="Football">Football</option>
+            </select>
+        </datalist> -->
+        <!-- Input tupe hidden -->
+        <input type="hidden">
+    </form>
+    <script>
+        function myFunc() {
+            alert("Hello");
+            // document.getElementById("formSubmit").innerHTML = "asfd";
+        }
+        function onCountryChange() {
+
+            alert("Country is choosen and whats next.");
+            document.getElementById("formData").innerHTML = "Country Changed.";
+        }
+    </script>
+    <noscript>
+        Your Browser does not support or disabled JavaScript
+    </noscript>
+
+    <p id="formData"></p>
+</body>
+
+</html>

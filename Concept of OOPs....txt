@@ -1,0 +1,8 @@
+Concept of OOPs...
+
+Class
+Object
+Inheritance
+Polymorphism
+Abstraction
+Encaptulation

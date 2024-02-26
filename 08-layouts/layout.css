@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden; */
+}
+
+.header {
+    background-color: #333333;
+    color: white;
+    width: 100%;
+    /* padding  creates oveflow  so goto line 4*/
+    /* padding: 10px; */
+    height: 100px;
+    font-size: 50px;
+    text-align: center;
+    line-height: 100px;
+    /* line-height: center form top bottom*/
+}
+
+.left-content {
+    background-color: lightblue;
+    width: 30%;
+    float: left;
+    height: 500px;
+    text-align: center;
+    line-height: 500px;
+}
+
+.main-content {
+    background-color: lightgreen;
+    width: 70%;
+    height: 500px;
+    float: left;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* line-height: 500px; */
+}
+
+.footer {
+    background-color: blueviolet;
+    color: white;
+    height: 200px;
+    width: 100%;
+    clear: left;
+    text-align: center;
+    line-height: 200px;
+}
+
+/* div {
+    margin: 10xp 20xp 30px; (top 10, left 10, right 10, bottom 30 )
+} */
+
+
+.border {
+    border:5px solid black;
+    text-align: center;
+    line-height: 100px;
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.paragraph {
+    background-color: antiquewhite;
+    background-image: url(../02-images/rakesh.jpg);
+    /* background-size: 200px; */
+    background-repeat: no-repeat;
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+    color: #fff;
+    font-size: 40px;
+    background-attachment: fixed;
+    background-position: right;
+}
